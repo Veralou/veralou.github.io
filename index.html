@@ -26,7 +26,7 @@
 
                <div><h1>Vera's First Programming Project in D3</h1>
                </div>
-        <div><h2>Sweden: how is the marital status connected to the number of children?</h2></div>
+        <div><h2>Is there a correlation between the marital status and the number of children that people in Sweden have?</h2></div>
 
         <div>Data source: <a href="www.worldvaluessurvey.org">World Value Survey</a></div>
         <div></div>
@@ -61,12 +61,16 @@
         <div><h3>Improvement of the WVS visualization tools</h3></div>
         <div>
             <h5>Adding view transformations and modifying the visual structures</h5>
-            <p>The data display in parallel coordinates allows to filter the data according to different variables eg. '2 children' and 'divorced' and gives an approximate number of respondents. The user can move filters around, enlarge them and thereby focus on different categorical data. The data view transformations provided by WVS were limited, no zooming or filtering was possible and the barcharts were not big enough to identify the differences.</p>
+            <p>The data display in parallel coordinates allows to filter the data according to different variables eg. '2 children' and 'divorced' and gives an approximate number of respondents. The user can move filters around, enlarge them and thereby focus on different categorical data. The data view transformations provided by WVS were limited, no zooming or filtering was possible and the barcharts were not big enough to identify the differences. All data is shown in one graph which makes it hard to read and draw conclusions from.</p>
         </div>
 
         <hr color="grey"/>
 
         <div id="graph" class="parcoords"></div>
+        <div><h3>Limitations of the visualization and future work</h3></div>
+        <div><p>The visualisation with parallel coordinates allows to filter for different conditions and see how they connect to each other. However, this tool is not helpful for summing up the total of people with one child. Ideally, both a marital status and a number of children should be selected in order to compare and analyse different lines. This visualization could be improved by adding hovereffects so that when the mouse is moved over a line, its data is shown in a little box. Also it could have been nice to map one line to one respondent of the survey so that the graph would contain over 1000 different lines. Furthermore, the sample size (around 1000 people) might not be big enough so that insightful conclusions can be drawn on the correlation of marital status and children. Further statistical calculations would be necessary to validate it. More variables should be added as axes of the parallel coordinates to analyse their influence on the two variables like for example income or education level. However, it was not possible for me to include this amount of detail into the graph. It would have been necessary to filter the raw data for different conditions eg married Swedes with one children of lowest income and education level and so forth until all possible combinations of the variables are fullfilled. This could be an interesting research approach for future work.</p></div>
+
+        <div><p>Great thanks go to Victor Armash who helped me a lot on the programming side of this data visualisation project.</p></div>
         <hr color="grey"/>
         <img src= "image/VisPipeline.png"></img>
 
